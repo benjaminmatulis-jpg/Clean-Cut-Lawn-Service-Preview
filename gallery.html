@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Clean Cut Lawn Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b6e4a',
+                        secondary: '#d4a017',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <script src="components/navbar.js"></script>
+    <ironblade-navbar></ironblade-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <img 
+            src="https://images.unsplash.com/photo-1547099036-b43cd570bdae?q=80&w=1724&auto=format&fit=crop"
+            alt="Beautiful lawn gallery"
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+        <div class="absolute inset-0 bg-black/45"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide text-white mb-5">
+                OUR WORK GALLERY
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
+                See examples of our premium lawn care and landscaping services
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">RECENT PROJECTS</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://img.sanishtech.com/u/60740f41ef90c95cf570f52da332ed41.jpg" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://image2url.com/r2/default/images/1768872365824-c8afa459-e340-4e7b-a8e1-74457be8dfc8.jpg" 
+                         alt="Landscape design project" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://img.sanishtech.com/u/7262947a4372d14f8616a5bfc8b536dd.jpg" 
+                         alt="Paver installation project" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://img.sanishtech.com/u/54e3415f991139d333a516861f48da6d.jpg" 
+                         alt="Irrigation system project" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://img.sanishtech.com/u/6cd8688a891d99390d0afe5c52d60cca.jpg" 
+                         alt="Outdoor lighting project" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://img.sanishtech.com/u/9a3d070b25074c86525072ed8fade9da.jpg" 
+                         alt="Complete yard transformation" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">READY TO TRANSFORM YOUR OUTDOOR SPACE?</h2>
+                <p class="text-xl mb-8">Contact Clean Cut Lawn Service today for a free consultation and quote.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="quote.html" class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center justify-center">
+                        <i data-feather="mail" class="mr-2"></i> Contact us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <script src="components/footer.js"></script>
+    <ironblade-footer></ironblade-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
